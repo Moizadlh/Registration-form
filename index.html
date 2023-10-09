@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="full">
+        <div class="form-box">
+            <h3>Register Yourself</h3>
+            <p>firstname* <span id="fnamep">(Please enter valid first name)</span></p>
+            <input type="text" placeholder="ALI" id="fname">
+            <p>lastname* <span id="lnamep">(Please enter valid last name)</span></p>
+            <input type="text" placeholder="AKBAR" id="lname">
+            <p>email* <span id="emailp">(Enter valid email address)</span></p>
+            <input type="email" placeholder="google123@gmail.com" id="email">
+            <p>other-email<span id="op">(optional)</span> <span id="oemailp">(use valid email or leave)</span></p>
+            <input type="email" placeholder="google123@gmail.com" id="oemail">
+            <p>Contact* <span id="contp">(use valid contact number)</span></p>
+            <input type="number" placeholder="03000000000" id="cont">
+            <p>other-contact<span id="op">(optional)</span> <span id="ocontp">(not valid number)</span></p>
+            <input type="number" placeholder="03000000000" id="ocont">
+            <div id="passd">
+                <p style="display: inline;">Password*</p>
+                <button id="pass"><i class='bx bx-key'></i>strong</button>
+                <span id="passwp">Wrong password</span>
+            </div>
+            <input type="password" placeholder="********" id="passw">
+            <p>Confirm-password* <span id="cpasswp">Wrong password</span></p>
+            <input type="password" placeholder="********" id="cpassw">
+            <div class="log">
+                <p>Already Registered?</p>
+                <a href="#">login</a>
+            </div>
+            <button type="submit" id="submit">Registered</button>
+        </div>
+    </form>
+
+    <div id="submitted">
+        <p id="reqa">Your request has been submited succesfully</p>
+        <button id="Ar">Another Registeration</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
